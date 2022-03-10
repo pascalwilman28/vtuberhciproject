@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vtube | Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<!-- Header -->
+<custom-header></custom-header>
+
+<body>
+    <!-- Screen Saver -->
+    <canvas id="canvas" hidden></canvas>
+
+    <div class="main-content" id="content">
+        <!-- Banner -->
+        <div id="banner">
+            <h1>VTUBE</h1>
+            <p>Virtual Talent Agency</p>
+        </div>
+
+        <!-- About Vtube -->
+        <div class="about-us">
+            <div class="about-us-details">
+                <h2 class="subtitle">ABOUT VTUBE</h2>
+                <p>
+                    Vtube is a new upcoming Vtuber Agency in Indonesia, established in 2021. 
+                    Vtube aims in creating quality talents to give the best result. 
+                    Together we maximize talent potential in both virtual and real world. <br><br>
+                    <span id="lets-watch-video">Check out our promotional video!</span>
+                </p>
+                <a href="#promotional-player">
+                    <div class="btn-play">
+                        <span class="material-icons-round watch-now">play_circle_outline</span>
+                        <h2>WATCH NOW</h2>
+                    </div>
+                </a>
+            </div>
+            <img src="assets/img/home_img_anime.webp" alt="">
+        </div>
+        
+        <!-- Promotional Video -->
+        <div class="promotional-section-bg">
+            <div class="promotional-section">
+                <div class="title-section">Introducing Our Talent</div>
+                <video width="80%" controls="controls" preload="metadata" id="promotional-player"
+                    poster="assets/videos/thumbnail-promotional-video.jpg">
+                    <source src="assets/videos/promotional-video.mp4" type="video/mp4">
+                </video>
+                <a href="talent.html" id="view-all-talents">
+                    View All Talents
+                </a>
+            </div>
+        </div>
+
+        <!-- Audition Section -->
+        <div class="audition-section">
+            <div class="title-section">Audition Section</div>
+            <!-- Qualification -->
+            <div class="qualification">
+                <img src="assets/img/home_anime1.webp" alt="">
+                <div class="qualification-details">
+                    <h2 class="subtitle">QUALIFICATION</h2>
+                    <ul type="1">
+                        <li>You must be able to create content continuously in the first year as vtuber</li>
+                        <li>You must routine to upload content 2 to 3 times a week</li>
+                        <li>You have a portfolio of creating content (include video, illustration, song, etc)</li>
+                        <li>Minimum age is 18 years old or older</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Process -->
+            <div class="process">
+                <div class="process-details">
+                    <h2 class="subtitle">PROCESS</h2>
+                    <div class="process-container">
+                        <div class="process-content">
+                            <div class="process-title">
+                                <div class="number">1</div>
+                                <div class="title">REGISTRATION</div>
+                            </div>
+                            <div class="process-desc">
+                                <img src="assets/img/process/Registration.png" alt="">
+                                <p>Collect your data and complete the administration.</p>
+                            </div>
+                        </div>
+                        <div class="process-content">
+                            <div class="process-title">
+                                <div class="number">2</div>
+                                <div class="title">AUDITION</div>
+                            </div>
+                            <div class="process-desc">
+                                <img src="assets/img/process/Audition.png" alt="">
+                                <p>Show your talent, do your best.</p>
+                            </div>
+                        </div>
+                        <div class="process-content">
+                            <div class="process-title">
+                                <div class="number">3</div>
+                                <div class="title">RESULT</div>
+                            </div>
+                            <div class="process-desc">
+                                <img src="assets/img/process/Result.png" alt="">
+                                <p>Get the result and be the winner.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/home_anime2.webp" alt="">
+            </div>
+        </div>
+
+        <!-- Video Slider -->
+        <div class="video-slider">
+            <div class="title-section">Let's see our activities</div>
+            <div class="main-content-4">
+                <div class="slider-container">
+                    <ul class="videos"></ul>
+                    <button id="prev-btn" onclick="prev()">
+                        <span class="material-icons-round slider">chevron_left</span>
+                    </button>
+                    <button id="next-btn" onclick="next()">
+                        <span class="material-icons-round slider">chevron_right</span>
+                    </button>
+                    <div class="slider-dot">
+                        <button onclick="dot(0)"></button>
+                        <button onclick="dot(1)"></button>
+                        <button onclick="dot(2)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<custom-footer></custom-footer>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/screensaver.js"></script>
+<script type="module" src="js/header_footer.js"></script>
+
+</html>
