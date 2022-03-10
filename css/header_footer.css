@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+header {
+    background-color: #03ced2;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.header-container{
+    padding-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo a img{
+    width: 60pt;
+    height: 35pt;
+    cursor: pointer;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input[type="search"] {
+    width: 30vw;
+    height: 30px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    line-height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-indent: 25px;
+}
+
+.material-icons-round.search {
+    color: #03ced2;
+    line-height: 30px;
+    position: absolute;
+    left: 15px;
+}
+
+/* Navbar Dropdown */
+.material-icons-round.menu {
+    display: none;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-container .dropdown span img:hover{
+    background-color: #f67381;
+    transition: 0.7s;
+}
+
+.dropdown {
+    position: inherit;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    height: 60px;
+    color: rgb(255, 255, 255);
+    padding: 0 1.2vw;
+    text-decoration: none;
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    /* font-size: 1.2em; */
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 1px #989898;
+}
+
+.nav-menu a img {
+    width: 40%;
+    height: 40%;
+}
+
+.nav-menu a:hover {
+    background-color: #f67381;
+    transition: 0.5s;
+}
+
+footer{
+    width: 100%;
+    background-color: #03ced2;;
+    display: flex;
+    color: #00296f;
+    height: 100%;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    padding: 30px;
+    justify-content: space-between; /*ratain kanan kiri semuanya*/
+}
+
+.footer-2{
+    text-align: center;
+}
+
+.footer-2 p{
+    padding: 3px;
+}
+
+.footer-2 .social-media{
+    display: flex;
+    gap: 25px;
+}
+
+.footer-2 .social-media img{
+    height: 50px;
+    width: 50px;
+}
+
+/* media screen */
+@media screen and (max-width: 700px) {
+    .header-container{
+        padding: 0 3vw;
+    }
+
+    .logo{
+        padding: 3px 0px;
+    }
+
+    .search-bar input[type="search"] {
+        width: 50vw;
+    }
+
+    .material-icons-round.menu {
+        display: block;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        right: 0;
+        background-color: #03ced2;
+        z-index: 1;
+        transition: ease-out 0.5s;
+    }
+
+    .nav-menu a {
+        padding: 0 10px;
+        gap: 10px;
+        justify-content: left;
+        font-size: 1.2em;
+    }
+
+    .nav-menu a:hover {
+        background-color: #f67381;
+        transition: 0s;
+    }
+
+    .nav-menu a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .show-dropdown {
+        display: block;
+    }
+
+    footer{
+        background-color: #03ced2;;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: auto;
+        align-items: center;
+        padding: 30px;
+        justify-content: space-between; /*ratain kanan kiri semuanya*/
+    }
+
+    .footer-1 p{
+        margin-bottom: 10px;
+    }
+
+    .footer-2{
+        text-align: center;
+    }
+    
+    .footer-2 p{
+        padding: 3px;
+    }
+    
+    .footer-2 .social-media{
+        display: flex;
+        gap: 25px;
+    }
+    
+    .footer-2 .social-media img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+body{
+    display: block;
+}

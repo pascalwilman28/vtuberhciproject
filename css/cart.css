@@ -1,0 +1,459 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+}
+
+#title {
+    color: #f67381;
+    font-family: 'Dosis', sans-serif;
+    font-size: 5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+#line {
+    margin: 10px 0 30px;
+    width: 100%;
+    height: 20px;
+    background: #f67381;
+}
+
+#empty-cart{
+   text-align: center;
+}
+
+#empty-cart img{
+    width: 400px;
+    height: 40vh;
+}
+
+#empty-cart>.title{
+    font-weight: 800;
+    font-size: 15pt;
+    color: #f67381;
+    text-shadow: no;
+}
+
+#empty-cart .subtitle{
+    color: #03ced2;
+    font-family: "Roboto", sans-serif;
+}
+
+#empty-cart .shop-btn{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#empty-cart .shop-now{
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    background-color: #03ced2;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#empty-cart .shop-now:hover{
+    background-color: #f67381;
+    transition: 0.5s;
+}
+
+#cart-info{
+    width: 89%;
+    margin: auto;
+    /* background: red; */
+}
+
+.header-title{
+    /* margin: auto; */
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #03ced2;
+    color: white;
+}
+
+.title{
+    padding: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14pt;
+    text-shadow: 1px 1px 2px #989898;
+}
+
+.product-column {
+    width: 40%;
+}
+
+.quantity-column {
+    width: 30%;
+    text-align: center;
+}
+
+.subtotal-column {
+    width: 30%;
+    text-align: right;
+}
+
+.line-gap{
+    opacity: 20%;
+}
+
+.product-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.product-detail{
+    padding: 10px;
+    min-width: 13vw;
+}
+
+.product .photo img{
+    max-width: 150px;
+    padding-right: 10px;
+}
+
+.product-detail .category{
+    background-color: #03ced2;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px #989898;
+    padding: 3px;
+    width: 120px;
+    min-width: 100px;
+    letter-spacing: 1px;
+}
+
+.product-detail .product-name{
+    padding-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.product-detail .product-price{
+    padding-top: 5px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+#delete-product {
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.material-icons.delete {
+    color: #f67381
+}
+
+.material-icons.delete:hover {
+    color: #de3136;
+}
+
+.total-gap {
+    float: right;
+    width: 41%;
+    background: #03ced2;
+    border: none;
+    border-radius: 5px;
+}
+
+.product-qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.subtotal {
+    font-family: "Roboto", sans-serif;
+}
+
+.material-icons-round.qty {
+    line-height: 30px;
+    font-size: 0.9em;
+}
+
+#addQty,
+#minQty {
+    border: none;
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transition: 0.2s;
+
+    color: #f67381;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#addQty:hover,
+#minQty:hover {
+    color: white;
+    background: #f67381;
+}
+
+.subtotal {
+    padding-right: 20px;
+}
+
+.price-detail {
+    margin: 15px 0 15px 60%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+.detail-price {
+    padding-right: 20px;
+}
+
+.line-gap{
+    background-color: #03ced2;
+    border: none;
+    padding: 10px;
+}
+
+.control-btn{
+    margin: 40px 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-btn,
+.checkout-btn {
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shopping-btn {
+    background: linear-gradient(30deg, #d4a5aa, #f67381);
+}
+
+.shopping-btn:hover{
+    transform: translateY(-10px);
+    background: linear-gradient(30deg, #72cac0, #03ced2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.checkout-btn{
+    background: linear-gradient(30deg, #72cac0, #03ced2);
+    border: none;
+}
+
+.checkout-btn:hover{
+    transform: translateY(-10px);
+    background: linear-gradient(30deg, #d4a5aa, #f67381);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Customer Form */
+#customerform {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,.6);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+
+/* Show Customer Form*/
+#customerform:target {
+	visibility: visible;
+}
+
+.window-box {
+	width: 500px;
+	height: auto;
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+    background-color: #03ced2;
+    color: white;
+    font-weight: 800;
+    font-family: 'Dosis', sans-serif;
+}
+
+.window-box h2 {
+	padding: 30px;
+}
+
+/* Close Form */
+.close-button {
+	width: 7%;
+	height: auto;
+	line-height: 25px;
+	background: #03ced2;
+	border: 3px solid #fff;
+    color: #fff;
+	display: block;
+    position: absolute;
+	text-align: center;
+	text-decoration: none;
+	top: -10px;
+	right: -10px;	
+    border-radius: 50%;
+}
+
+.close-button:hover{
+    background-color: #f67381;
+}
+
+/* Close Customer Form*/
+#customerformhidden:target {
+	visibility: hidden;
+}
+
+.header-form{
+    padding: 5px;
+    font-weight: 800;
+    font-size: 15pt;
+}
+
+.input-box{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box .input-title{
+    width: 30%;
+    text-align: right;
+    margin-top: 15px;
+    padding-right: 10px;
+}
+
+.input-box .input-field{
+    width: 70%;
+    text-align: left;
+}
+
+.input-box input[type="text"],input[type="email"],textarea{
+    margin-top: 15px;
+    width: 90%;
+    height: 25pt;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 10px;
+}
+
+.input-box input[type="radio"]{
+    margin-top: 15px;
+    padding: 10px 10px;
+}
+
+textarea{
+    max-width: 220pt;
+    max-height: 100pt;
+}
+
+.input-box input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
+    background-color: rgb(236, 233, 233);
+}
+
+.btn-primary{
+    background-color: #fff;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.btn-primary:hover{
+    transition: 0.2s;
+    background-color: #f67381;
+    color: white;
+}
+
+@media screen and (max-width : 700px) {
+    .window-box {
+        width: 450px;
+    }
+
+    .product-column {
+        width: 40%;
+    }
+    
+    .quantity-column {
+        width: 30%;
+        text-align: center;
+    }
+    
+    .subtotal-column {
+        width: 30%;
+        text-align: right;
+    }
+    
+    .line-gap{
+        opacity: 20%;
+    }
+    
+    .product-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-detail{
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;    
+        padding: 10px;
+        font-size: 11pt;
+        min-width: 13vw;
+    }
+    
+    #delete-product {
+        margin: 0px 0px 0px auto;
+    }
+
+    .split-view{
+        display: flex;
+        justify-content: space-between;
+    }
+}

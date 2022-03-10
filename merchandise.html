@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise</title>
+    <script type="module" src="js/header_footer.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/merchandise.css">
+</head>
+<custom-header></custom-header>
+<body>
+    <!-- Screen Saver -->
+    <canvas id="canvas" hidden></canvas>
+
+    <div id="content">
+        <div id="title">MERCHANDISE</div>
+        <div id="line"></div>
+        <div class="content">
+            <!--Shirt-->
+            <div class="section">
+                <div class="title-section">SHIRT</div>
+                    <div class="section-container">
+                        <div class="section-img">
+                            <img src="assets/img/tshirt/Shirt-1.jpg" alt="">
+                            <div class="section-detail">
+                                <div class="section-name">
+                                    <p>Hololive Rushia with Hoodie Classic T-Shirt</p>
+                                </div>
+                                <div class="section-price">
+                                    <p>$19.94</p>
+                                </div>
+                            </div>
+                            <div class="section-button" onclick="addToCart(this.parentElement, 'Shirt',1)">
+                                <button>
+                                    <img src="assets/img/navbar/cart.png">
+                                    <p id="text">Add to cart</p>
+                                </button>
+                            </div> 
+                        </div>
+                        <!--S-2-->
+                        <div class="section-img">
+                            <img src="assets/img/tshirt/Shirt-2.jpg" alt="">
+                            <div class="section-detail">
+                                <div class="section-name">
+                                    <p>Hololive Uruha Rushia Classic T-Shirt</p>
+                                </div>
+                                <div class="section-price">
+                                    <p>$19.94</p>
+                                </div>
+                            </div>
+                            <div class="section-button" onclick="addToCart(this.parentElement, 'Shirt',1)">
+                                <button>
+                                    <img src="assets/img/navbar/cart.png">
+                                    <p id="text">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!--S-3-->
+                        <div class="section-img">
+                            <img src="assets/img/tshirt/Shirt-3.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Hololive Shiranui Flare Classic T-Shirt</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$19.94</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Shirt',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <!--4-->
+                        <div class="section-img">
+                            <img src="assets/img/tshirt/Shirt-4.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Hololive Shirogane Noel Classic T-Shirt</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$19.94</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Shirt',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <!--5-->
+                        <div class="section-img">
+                            <img src="assets/img/tshirt/Shirt-5.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Hololive Tokoyami Towa Classic T-Shirt</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$19.94</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Shirt',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <!--6-->
+                        <div class="section-img">
+                            <img src="assets/img/tshirt/Shirt-6.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Hololive Aqua with Hoodie Classic T-Shirt</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$19.94</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Shirt',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+                    <!--Poster-->
+            <div class="section">
+                <div class="title-section">POSTER</div>
+                <!--S-1-->
+                    <div class="section-container"> 
+                        <div class="section-img">
+                            <img src="assets/img/poster/Poster-1.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Happy Birthday, Korone Poster</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$23.44</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Poster',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <!--S-2-->
+                        <div class="section-img">
+                            <img src="assets/img/poster/Poster-2.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Kson Poster</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$12.98</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Poster',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <!--S-3-->
+                        <div class="section-img">
+                            <img src="assets/img/poster/Poster-3.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Gawr Gura Poster</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$21.64</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Poster',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="section-img">
+                            <img src="assets/img/poster/Poster-4.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Mori Calliope Poster</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$21.64</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Poster',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="section-img">
+                            <img src="assets/img/poster/Poster-5.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Houshou marine Poster</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$21.64</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Poster',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="section-img">
+                            <img src="assets/img/poster/Poster-6.jpg" alt="">
+                                <div class="section-detail">
+                                    <div class="section-name">
+                                        <p>Inugami Korone Poster</p>
+                                    </div>
+                                    <div class="section-price">
+                                        <p>$21.64</p>
+                                    </div>
+                                </div>
+                                <div class="section-button" onclick="addToCart(this.parentElement, 'Poster',1)">
+                                    <button>
+                                        <img src="assets/img/navbar/cart.png">
+                                        <p id="text">Add to cart</p>
+                                    </button>
+                                </div>
+                        </div>
+                    </div> 
+            </div>    
+            <!--Audio Track-->
+            <div class="section">
+                <div class="title-section">AUDIO TRACK</div>
+                <!--S-1-->
+                <div class="section-container"> 
+                    <div class="section-img">
+                        <img src="assets/img/audio/Audio-1.jpg" alt="">
+                        <div class="section-detail">
+                            <div class="section-name">
+                                <p>Vtuber Vibes (Snuffy)</p>
+                            </div>
+                            <div class="section-price">
+                                <p>$0.99</p>
+                            </div>
+                        </div>
+                        <div class="section-button" onclick="addToCart(this.parentElement, 'Audio Track',1)">
+                            <button>
+                                <img src="assets/img/navbar/cart.png">
+                                <p id="text">Add to cart</p>
+                            </button>
+                        </div>
+                    </div>
+                    <!--S-2-->
+                    <div class="section-img">
+                        <img src="assets/img/audio/Audio-2.jpg" alt="">
+                            <div class="section-detail">
+                                <div class="section-name">
+                                    <p>SHALLYS</p>
+                                </div>
+                                <div class="section-price">
+                                    <p>$1.29</p>
+                                </div>
+                            </div>
+                            <div class="section-button" onclick="addToCart(this.parentElement, 'Audio Track',1)">
+                                <button>
+                                    <img src="assets/img/navbar/cart.png">
+                                    <p id="text">Add to cart</p>
+                                </button>
+                            </div>
+                    </div>
+                    <!--S-3-->
+                    <div class="section-img">
+                        <img src="assets/img/audio/Audio-3.jpg" alt="">
+                            <div class="section-detail">
+                                <div class="section-name">
+                                    <p>Vtuber Vibes (Ironmouse)</p>
+                                </div>
+                                <div class="section-price">
+                                    <p>$0.99</p>
+                                </div>
+                            </div>
+                            <div class="section-button" onclick="addToCart(this.parentElement, 'Audio Track',1)">
+                                <button>
+                                    <img src="assets/img/navbar/cart.png">
+                                    <p id="text">Add to cart</p>
+                                </button>
+                            </div>
+                    </div>
+                    <!--4-->
+                    <div class="section-img">
+                        <img src="assets/img/audio/Audio-4.jpg" alt="">
+                            <div class="section-detail">
+                                <div class="section-name">
+                                    <p>Vtubers Never Die!(Extended Version)</p>
+                                </div>
+                                <div class="section-price">
+                                    <p>$1.29</p>
+                                </div>
+                            </div>
+                            <div class="section-button" onclick="addToCart(this.parentElement, 'Audio Track',1)">
+                                <button>
+                                    <img src="assets/img/navbar/cart.png">
+                                    <p id="text">Add to cart</p>
+                                </button>
+                            </div>
+                    </div>
+                    <!--5-->
+                    <div class="section-img">
+                        <img src="assets/img/audio/Audio-5.jpg" alt="">
+                            <div class="section-detail">
+                                <div class="section-name">
+                                    <p>Vtuber Vibes (Millie Parfait)</p>
+                                </div>
+                                <div class="section-price">
+                                    <p>$0.99</p>
+                                </div>
+                            </div>
+                            <div class="section-button" onclick="addToCart(this.parentElement, 'Audio Track',1)">
+                                <button>
+                                    <img src="assets/img/navbar/cart.png">
+                                    <p id="text">Add to cart</p>
+                                </button>
+                            </div>
+                    </div>
+                    <!--6-->
+                    <div class="section-img">
+                            <img src="assets/img/audio/Audio-6.jpg" alt="" id="img">
+                            <div class="section-detail">
+                                <div class="section-name">
+                                    <p id="item-name">Vtuber no Uta</p>
+                                </div>
+                                <div class="section-price">
+                                    <p id="item-price">$1.29</p>
+                                </div>
+                            </div>
+                            <input type="hidden" id="item-category">
+                            <div class="section-button" onclick="addToCart(this.parentElement, 'Audio Track',1)">
+                                <button>
+                                    <img src="assets/img/navbar/cart.png">
+                                    <p id="text">Add to cart</p>
+                                </button>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="namesList"></div>
+</body>
+<custom-footer></custom-footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/screensaver.js"></script>
+</html>

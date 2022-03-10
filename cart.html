@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script type="module" src="js/header_footer.js"></script>
+</head>
+<custom-header></custom-header>
+<body>
+    <!-- Screen Saver -->
+    <canvas id="canvas" hidden></canvas>
+
+    <div id="content">
+        <div id="title">CART</div>
+        <div id="line"></div>
+        
+        <!-- Empty Cart -->
+        <div id="empty-cart">
+            <img src="assets/img/cart/empty-cart.png" alt="">
+            <div class="title">Oops! Your cart is empty!</div>
+            <div class="subtitle">Looks like you haven't added anything to your cart yet<br>Shop now!</div>
+            <div class="shop-btn">
+                <a href="nendroid.html" class="shop-now">Figure</a>
+                <a href="merchandise.html" class="shop-now">Merchandise</a>
+            </div>
+        </div>
+
+        <div id="cart-info">
+            <div class="header-title">
+                <h2 class="title product-column">Product</h2>
+                <h2 class="title quantity-column">Quantity</h2>
+                <h2 class="title subtotal-column">Subtotal</h2>
+            </div>
+            <hr class="line-gap">
+
+            <!-- Cartlist -->
+            <div id="cartList"> </div>
+
+            <div class="control-btn">
+                <a href="merchandise.html" class="shopping-btn">Continue Shopping</a>
+                <button type="button" class="checkout-btn" onclick="checkout();">Proceed to checkout</button>
+            </div>
+        </div>
+
+        <!-- Pop up Customer Form -->
+        <div id="customerform">
+            <div class="window-box">
+                <button type="button" class="close-button" onclick="closeform();">X</button>
+                <div class="form">
+                    <div class="header-form">CUSTOMER FORM</div>
+                    <hr>
+                    <form action="" method="post">
+                        <div class="input-box">
+                            <div class="input-title">Name</div>
+                            <div class="input-field">
+                                <input type="text" name="name" id="name" placeholder="Input your Name" required>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-title">
+                                Gender
+                            </div>
+                            <div class="input-field">
+                                <input type="radio" name="gender" id="genderM" value="Laki-laki" required> L
+                                <input type="radio" name="gender" id="genderF" value="Perempuan" required> P
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-title">
+                                Email
+                            </div>
+                            <div class="input-field">
+                                <input type="email" name="email" id="email" placeholder="Input your email with @" required>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-title">
+                                Phone
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="phone" id="phone" placeholder="Input your phone" required>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-title">
+                                Address
+                            </div>
+                            <div class="input-field">
+                                <textarea name="address" id="address" cols="20" rows="10" required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-primary" onclick="validate();">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<custom-footer></custom-footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/screensaver.js"></script>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/talent.css">
+    <script type="module" src="js/header_footer.js"></script>
+</head>
+<body>
+    <custom-header></custom-header>
+    <!-- Screen Saver -->
+    <canvas id="canvas" hidden></canvas>
+
+    <div id="content">
+        <div id="title">OUR TALENT</div>
+        <div id="line"></div>
+        
+        <div class="select-box">
+            <div class="options-container">
+                <div class="gen-option" onclick="filter('all')">
+                    <input type="radio" class="option" name="category" id="all-gen">
+                    <label for="all-gen">All Generation</label>
+                </div>
+                <div class="gen-option" onclick="filter('2021')">
+                    <input type="radio" class="option" name="category" id="gen2021">
+                    <label for="gen2021">2021</label>
+                </div>
+                <div class="gen-option" onclick="filter('2020')">
+                    <input type="radio" class="option" name="category" id="gen2020">
+                    <label for="gen2020">2020</label>
+                </div>
+                <div class="gen-option" onclick="filter('2019')">
+                    <input type="radio" class="option" name="category" id="gen2019">
+                    <label for="gen2019">2019</label>
+                </div>
+                <div class="gen-option" onclick="filter('2018')">
+                    <input type="radio" class="option" name="category" id="gen2018">
+                    <label for="gen2018">2018</label>
+                </div>
+                <div class="gen-option" onclick="filter('2016')">
+                    <input type="radio" class="option" name="category" id="gen2016">
+                    <label for="gen2016">2016</label>
+                </div>
+            </div>
+            <div class="selected">
+                All Generation
+            </div>
+        </div>
+
+        <div class="talent-container">
+            <div class="talent-profile 2020">
+                <img src="assets/img/talent/Alia_Adelia.webp" alt="Alia Adelia">
+                <span class="talent-name">ALIA ADELIA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>February 21, 2020</p>
+                </div>
+            </div>
+            <div class="talent-profile 2019">
+                <img src="assets/img/talent/Andi_Adinata.webp" alt="Andi Adinata">
+                <span class="talent-name">ANDI ADINATA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>October 22, 2019</p>
+                </div>
+            </div>
+            <div class="talent-profile 2020">
+                <img src="assets/img/talent/Chloe_Pawapua.webp" alt="Chloe Pawapua">
+                <span class="talent-name">CHLOE PAWAPUA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>September 20, 2020</p>
+                </div>
+            </div>
+            <div class="talent-profile 2020">
+                <img src="assets/img/talent/Gawr_Gura.webp" alt="Gawr Gura">
+                <span class="talent-name">GAWR GURA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>September 13, 2020</p>
+                </div>
+            </div>
+            <div class="talent-profile 2019">
+                <img src="assets/img/talent/Hana_Macchia.webp" alt="Hana Macchia">
+                <span class="talent-name">HANA MACCHIA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>September 13, 2019</p>
+                </div>
+            </div>
+            <div class="talent-profile 2016">
+                <img src="assets/img/talent/Kizuna_Ai.webp" alt="Kizuna Ai">
+                <span class="talent-name">KIZUNA AI</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>November 29, 2016</p>
+                </div>
+            </div>
+            <div class="talent-profile 2018">
+                <img src="assets/img/talent/Maya_Putri.webp" alt="Maya Putri">
+                <span class="talent-name">MAYA PUTRI</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>August 20, 2018</p>
+                </div>
+            </div>
+            <div class="talent-profile 2020">
+                <img src="assets/img/talent/Min_Suha.webp" alt="Min Suha">
+                <span class="talent-name">MIN SUHA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>January 25, 2020</p>
+                </div>
+            </div>
+            <div class="talent-profile 2020">
+                <img src="assets/img/talent/Moona_Hoshinova.webp" alt="Moona Hoshinova">
+                <span class="talent-name">MOONA HOSHINOVA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>April 11, 2020</p>
+                </div>
+            </div>
+            <div class="talent-profile 2020">
+                <img src="assets/img/talent/Nekoyama_Sena.webp" alt="Nekoyama Sena">
+                <span class="talent-name">NEKOYAMA SENA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>August 26, 2020</p>
+                </div>
+            </div>
+            <div class="talent-profile 2021">
+                <img src="assets/img/talent/Tada_Ace.webp" alt="Tada Ace">
+                <span class="talent-name">TADA ACE</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>April 16, 2021</p>
+                </div>
+            </div>
+            <div class="talent-profile 2019">
+                <img src="assets/img/talent/Taka_Radjiman.webp" alt="Taka Radjiman">
+                <span class="talent-name">TAKA RADJIMAN</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>September 13, 2019</p>
+                </div>
+            </div>
+            <div class="talent-profile 2018">
+                <img src="assets/img/talent/Tsukino_Mito.webp" alt="Tsukino Mito">
+                <span class="talent-name">TSUKINO MITO</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>February 7, 2018</p>
+                </div>
+            </div>
+            <div class="talent-profile 2020">
+                <img src="assets/img/talent/Watson_Amelia.webp" alt="Watson Amelia">
+                <span class="talent-name">WATSON AMELIA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>September 13, 2020</p>
+                </div>
+            </div>
+            <div class="talent-profile 2021">
+                <img src="assets/img/talent/Xia_Ekavira.webp" alt="Xia Ekavira">
+                <span class="talent-name">XIA EKAVIRA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>July 31, 2021</p>
+                </div>
+            </div>
+            <div class="talent-profile 2019">
+                <img src="assets/img/talent/Zea_Cornelia.webp" alt="Zea Cornelia">
+                <span class="talent-name">ZEA CORNELIA</span>
+                <div class="talent-debut">
+                    <p>Debut date: &nbsp</p>
+                    <p>September 13, 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <custom-footer></custom-footer>
+</body>
+<script src="js/select_box.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/screensaver.js"></script>
+</html>

@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5fefd;
+}
+
+#title {
+    color: #f67381;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50pt;
+    font-weight: 800;
+    text-align: center;
+}
+
+#line {
+    margin: 10px 0 20px 0;
+    width: 100%;
+    height: 20px;
+    background: #f67381;
+}
+
+/* select box */
+.select-box {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-family: "Roboto", sans-serif;
+}
+
+.select-box .gen-option,
+.selected {
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.selected {
+    color: #f67381;
+    font-size: 1.1em;
+    background: #b6fff6;
+    border-radius: 5px;
+    position: relative;
+    order: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.selected::after {
+    content: "";
+    background: #f67381;
+    mask: url("../assets/img/arrow_drop_down.svg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask: url("../assets/img/arrow_drop_down.svg");
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    right: 15px;
+    top: 0;
+    transition: 0.3s;
+}
+
+.selected:hover {
+    background: linear-gradient(60deg, #b6fff6, #74f7e9);
+}
+
+.select-box .options-container {
+    background: #b6fff6;
+    color: #f67381;
+    font-size: 1em;
+    max-height: 0;
+    width: 200px;
+    opacity: 0;
+    transition: ease-out 0.5s;
+    border-radius: 5px;
+    overflow: hidden;
+    order: 1;
+    position: absolute;
+    top: 245px;
+    z-index: 2;
+}
+
+.select-box .options-container.active {
+    max-height: 300px;
+    opacity: 1;
+    /* overflow-y: scroll; */
+}
+
+.select-box .gen-option {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.select-box .gen-option:hover {
+    background: #74f7e9;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .gen-option .option {
+    display: none;
+}
+
+.select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+}
+
+/* talent */
+.talent-container {
+    margin: 30px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5vw;
+}
+
+.talent-profile {
+    padding: 20px 0;
+    width: 240px;
+    height: 320px;
+    border-radius: 10px;
+    background: #74f7e9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: 0.5s;
+    cursor: default;
+}
+
+.talent-profile:hover {
+    transform: translateY(-20px);
+    background: linear-gradient(30deg, #b6fff6, #03ced2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.talent-name {
+    margin-top: 10px;
+    color: #f67381;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.talent-debut {
+    display: flex;
+    color: #f67381;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.talent-profile > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* untuk talent-profile kalau terpilih filter */
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #title {
+        font-size: 3em;
+    }
+
+    #line {
+        margin: 7px 0 14px 0;
+        height: 10px;
+    }
+
+    /* select-box */
+    .select-box {
+        margin: 12px;
+        width: 155px;
+    }
+
+    .select-box .gen-option,
+    .selected {
+        padding: 8px 15px;
+    }
+
+    .selected {
+        color: #f67381;
+        font-size: 1em;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .selected::after {
+        width: 25px;
+        height: 100%;
+        right: 12px;
+        top: 0;
+    }
+
+    .select-box .options-container {
+        font-size: 0.9em;
+        width: 155px;
+        border-radius: 4px;
+        top: 192px;
+    }
+
+    /* talent */
+    .talent-container {
+        margin: 20px 20px 40px;
+    }
+    
+    .talent-profile {
+        padding: 12px 0;
+        width: 150px;
+        height: 225px;
+        border-radius: 6px;
+    }
+
+    .talent-profile:hover {
+        transform: translateY(-10px);
+    }
+
+    .talent-name {
+        margin-top: 6px;
+        font-size: 1.1em;
+    }
+
+    .talent-debut {
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+
+    .talent-profile > img {
+        width: 125px;
+        height: 125px;
+        border-radius: 6px;
+    }
+}

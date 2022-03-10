@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    color: #f67381;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50pt;    
+    font-weight: 800;
+    text-align: center;
+}
+
+#line {
+    margin: 10px 0;
+    width: 100%;
+    height: 20px;
+    background: #f67381;
+}
+
+.nendoroid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.nendoroid{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 220px;
+    margin: 60px 60px 60px 60px;
+}
+
+.nendoroid>img{
+    display: flex;
+    height: 250px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+.nendoroid-detail{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.nendoroid-name{
+   font-weight: bold;
+   color: #f67381;
+   font-family: 'Dosis', sans-serif;
+   text-align: left;
+   font-size: 18px;
+   width: 200px;
+   height: 50px;
+}
+
+.nendoroid-price{
+    font-weight: thin;
+    color: #f67381;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+.nendoroid-button>a{
+    display: flex;
+    background-color : #03ced2;
+    height: 45px;
+    width: 175px;
+    text-decoration: none;
+}
+
+.nendoroid-button>button{
+    outline: none;
+    border: none;
+    height: 45px;
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px 0 10px;
+    background-color : #03ced2;
+    cursor: pointer;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nendoroid-button>button:hover{
+    background-color: #f67381;
+}
+
+.nendoroid-button>button>img{
+    height: 25px;
+    width: 25px;
+}   
+
+@media screen and (max-width : 700px) {
+    #title {
+        font-size: 3em;
+    }
+
+    #line {
+        margin: 7px 0 14px 0;
+        height: 10px;
+    }
+    .nendoroid{
+        height: 250px;
+        width: 200px;
+        margin: 30px 20px;
+    }
+    /* .nendoroid-detail{
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        width: 180px;
+        margin: 30px 20px;
+    } */
+    /*section-container : per jenis barang tpi title ga ikut*/
+    /*section-img--> detail dan button/
+    /*section-detail --> sect name ad price*/
+    /*section-button*/
+    /*title-section --> judul */
+    /*section (title include) --> per jenis barang (audio,poster,dll)*/
+    .nendoroid>img{
+        display: flex;
+        height: 160px;
+        width: 150px;
+        margin-bottom: 4px;
+    }
+    .nendoroid-detail{
+        gap: 7px;
+        margin-bottom: 2px;
+    }
+    .nendoroid-name{
+        height: 40px;
+    }
+    .nendoroid-name p{
+        font-size: 14px;
+    }
+    .nendoroid-price{
+        font-size: 14px;
+    }
+    .nendoroid-button>button{
+        height: 28px;
+        width: 150px;
+        padding: 0px 35px 0px 10px;
+        font-size: 2.4vw;
+    }
+    .nendoroid-button>button>img{
+        height: 13px;
+        width: 13px;
+    }
+}

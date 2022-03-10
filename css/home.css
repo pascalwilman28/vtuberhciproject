@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(108, 122, 137, 0.7), rgba(108, 122, 137, 0.7)), url("../assets/img/bg.webp");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+#banner h1 {
+    text-shadow: 5px 2px 10px #f67381;
+    font-size: 7em;
+}
+
+#banner p {
+    text-shadow: 5px 2px 10px #f67381;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.about-us {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us img {
+    width: 30vw;
+    height: 100%;
+}
+
+.about-us-details {
+    margin-left: 10vw;
+    width: 50vw;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px #74f7e9;
+    padding: 50px;
+    color: #f67381;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+}
+
+.about-us-details p {
+    margin: 30px 0 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+}
+
+#lets-watch-video {
+    color: #03ced2;
+}
+
+.btn-play {
+    margin: auto;
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #03ced2;
+    color: white;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: medium;
+    text-shadow: 1px 1px 2px #989898;
+    transition: 0.4s;
+}
+
+.btn-play:hover{
+    background-color: #f67381;
+}
+
+.material-icons-round.watch-now {
+    color: white;
+    font-size: 2em;
+}
+
+.title-section{
+    background-color: #03ced2;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px #989898;
+}
+
+.promotional-section-bg {
+    background: linear-gradient(45deg, #74f7e9, #b6fff4, #f5fefd);
+    transform: skewY(-10deg);
+}
+
+.promotional-section {
+    transform: skewY(10deg);
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.promotional-section video{
+    padding: 40px 0;
+    width: 80%;
+}
+
+#view-all-talents {
+    width: 200px;
+    margin: 10px auto;
+    display: block;
+    background: #f67381;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 45px;
+    transition: 0.4s;
+}
+
+#view-all-talents:hover {
+    background: #f5fefd;
+    color: #03ced2;
+    box-shadow: 0 7px 15px #03ced2;
+}
+
+.audition-section {
+    margin-top: 150px;
+    /* padding-bottom: 50px; */
+}
+
+.qualification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qualification img,
+.process > img {
+    width: 20vw;
+    min-width: 200px;
+    height: 100%;
+}
+
+.qualification-details {
+    margin-right: 100px;
+    width: 65vw;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px #74f7e9;
+
+    padding: 50px;
+    color: #f67381;
+}
+
+.qualification-details ul {
+    margin: 30px 0 10px 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+.process {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.process-details {
+    padding-bottom: 50px;
+}
+
+.process-details .subtitle {
+    color: #f67381;
+    text-align: center;
+}
+
+.process-container {
+    padding-left: 7vh;
+    /* width: 70vh; */
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.process-content {
+    position: relative;
+    width: 20vw;
+    min-width: 300px;
+    /* width: 300px; */
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px #74f7e9;
+    padding: 30px;
+    color: #f67381;
+    text-align: center;
+}
+
+.process-title > .number {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: #03ced2;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    opacity: 0.3;
+}
+
+.process-title > .title {
+    color: #03ced2;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.process-desc {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.process-desc img {
+    width: 8vw;
+    height: auto;
+}
+
+.process-desc > p {
+    font-family: "Roboto", sans-serif;
+}
+
+.video-slider {
+    margin: 80px 0;
+}
+
+.main-content-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* video-slider */
+.slider-container {
+    position: relative;
+}
+
+.slider-container .videos .video {
+    padding: 40px 0 10px;
+    position: relative;
+    display: none;
+}
+
+#prev-btn,
+#next-btn {
+    outline: none;
+    border: none;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: #f67381;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev-btn {
+    left: 5vw;
+}
+
+#next-btn {
+    right: 5vw;
+}
+
+.material-icons-round.slider {
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.slider-dot {
+    width: 200px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider-dot button {
+    outline: none;
+    height: 15px;
+    width: 15px;
+    border: 3px solid #f67381;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.slider-dot button:nth-child(1) {
+    background: #f67381;
+}
+
+
+@media screen and (max-width : 700px) {
+    #banner h1 {
+        font-size: 5em;
+    }
+
+    .about-us img {
+        display: none;
+    }
+    
+    .about-us-details {
+        margin: auto;
+        width: 80vw;
+        padding: 40px;
+        box-shadow: 0 15px 15px #74f7e9;
+    }
+
+    .about-us-details p {
+        margin: 20px 0;
+        font-size: 1em;
+    }
+    
+    .subtitle {
+        font-size: 1.8em;
+    }
+    
+    .material-icons-round.watch-now {
+        display: none;
+    }
+
+    .title-section{
+        padding: 10px;
+        width: 200px;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+
+    .promotional-section video{
+        padding: 30px 0;
+        width: 90%;
+    }
+
+    #view-all-talents {
+        width: 150px;
+        font-size: 1.3em;
+        line-height: 40px;
+    }
+
+    .qualification img,
+    .process > img {
+        display: none;
+    }
+  
+    .audition-section {
+        margin-top: 120px;
+    }
+
+    .qualification-details {
+        margin: auto;
+        width: 90vw;
+        box-shadow: 0 15px 15px #74f7e9;
+        padding: 40px;
+    }
+
+    .qualification-details h2 {
+        text-align: center;
+    }
+
+    .qualification-details ul {
+        margin: 20px 0 10px 10px;
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+    .process{
+        margin-top: 100px;
+    }
+
+    .process-details {
+        width: 100%;
+    }
+    
+    .process-container {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .process-content{
+        box-shadow: 0 12px 12px #74f7e9;
+    }
+
+    .process-desc {
+        flex-direction: column;
+    }
+
+    .process-desc img {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    a .btn-play{
+        width: 150px;
+    }
+
+    .qualification img{
+        display: none;
+    }
+    
+    .qualification-details {
+        margin: auto;
+        width: 90%;
+    }
+
+    .process .img-process{
+        display: none;
+    }
+
+    .process-desc img{
+        width: 80px;
+        height: auto;
+    }
+
+    #prev-btn,
+    #next-btn {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #prev-btn {
+        left: 3vw;
+    }
+
+    #next-btn {
+        right: 3vw;
+    }
+
+    .material-icons-round.slider {
+        font-size: 8vw;
+    }
+
+    .slider-dot {
+        width: 150px;
+        margin: 10px auto 0 auto;
+    }
+    
+    .slider-dot button {
+        height: 12px;
+        width: 12px;
+        border: 2px solid #f67381;
+    }
+}
